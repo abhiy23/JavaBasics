@@ -8,6 +8,15 @@ class Calculator
         int r = num1+num2;
         return r;
     }
+
+    public int add(int n1, int n2, int n3){
+        int r = n1+n2+n3;
+        return r;
+    }
+
+    public double add(double n1, double n2){
+        return n1+n2;
+    }
     
 }
 
@@ -22,7 +31,11 @@ public class Demo {
         int result = calc.add(num1,num2);
         // int result=num1+num2;
 
-        System.out.println(result);
+        // method Overloading
+        // we can define methods with same name but, pass the diff parameters or datatype.
+
+        var r=calc.add(3,4.5);
+        System.out.println(r);
 
     }    
 }
